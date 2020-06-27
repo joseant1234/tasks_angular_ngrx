@@ -52,4 +52,8 @@ export class TodoItemComponent implements OnInit {
     )
   }
 
+  remove() {
+    this.store.dispatch(actions.remove({ id: this.todo.id }));
+  }
+
 }
